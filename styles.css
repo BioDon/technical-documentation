@@ -54,8 +54,20 @@ html {
   }
   
   @media screen and (max-width: 600px) {
+    #navbar {
+      padding: 5px; /* Add padding to the navbar for better spacing on smaller screens */
+      width: 30%; /* Make the navbar take the full width of the screen */
+    }
+  
     #navbar header {
-      font-size: 1.2em; /* Adjust font size for smaller screens */
+      font-size: 1.0em; /* Adjust font size for smaller screens */
+    }
+  
+    #main-doc {
+      margin-left: 200px;
+      width: 100%; /* Make the main documentation take the full width of the screen */
+      box-sizing: border-box; /* Include padding and border in the total width */
+      padding: 10px; /* Add padding to the main documentation for better spacing on smaller screens */
     }
   }
   
