@@ -52,23 +52,43 @@ html {
     margin-left: 230px; /* Adjust the value based on the height of your fixed navbar */
     padding: 10px
   }
+
+  #main-doc h1 {
+    padding: -15px
+  }
   
   @media screen and (max-width: 600px) {
     #navbar {
-      padding: 5px; /* Add padding to the navbar for better spacing on smaller screens */
-      width: 30%; /* Make the navbar take the full width of the screen */
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      height: auto;
     }
   
-    #navbar header {
-      font-size: 1.0em; /* Adjust font size for smaller screens */
+    #navbar-toggle {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 1.5em;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   
     #main-doc {
-      margin-left: 200px;
-      width: 100%; /* Make the main documentation take the full width of the screen */
+      margin-left: 50px;
+      width: 170%; /* Make the main documentation take the full width of the screen */
       box-sizing: border-box; /* Include padding and border in the total width */
       padding: 10px; /* Add padding to the main documentation for better spacing on smaller screens */
     }
+
+    h1{
+      margin: auto;
+    }
+
   }
   
   code {

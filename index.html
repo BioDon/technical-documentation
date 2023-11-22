@@ -8,9 +8,14 @@
     </head>
 
     <body>
-      <nav id="navbar">
-        <header>JS Documentation</header>
-        
+        <header>
+          <button id="navbar-toggle" onclick="toggleNavbar()">
+            ☰
+          </button>
+          
+        </header>
+      <nav id="navbar" >
+               
           <ul>
             <li><a class="nav-link" href="#introduction">Introduction</a></li>
             </ul>
@@ -55,8 +60,9 @@
             </ul>
             </nav>
 
-
+            
       <main id="main-doc">
+        <h1>JS Documentation</h1>
         <section class="main-section" id="introduction">
           <header>Introduction</header>
           <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
@@ -214,6 +220,8 @@
 
 
         </main>
+
+        <script src="script.js"></script>
       </body>
 
 </html>
