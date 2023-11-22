@@ -1,102 +1,81 @@
 html, body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.5
-  }
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5
+}
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  header {
-    font-size: 2em;
-    padding-top: 10px;
-  }
-  
-  #navbar li {
-    color: #4d4e53;
-    border-top: 1px solid;
-    list-style: none;
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+header {
+  font-size: 2em;
+  padding-top: 10px;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%; /* Optionally set the height to make it cover the full height of the screen */
+  background-color: #f0f0f0; /* Add your preferred background color */
+  padding: 10px; /* Add padding to make it look better */
+}
+
+#navbar header {
+  font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333; /* Set your preferred text color */
+}
+
+#navbar a:hover {
+  color: red; /* Set the color for when the link is hovered */
+}
+
+#main-doc {
+  margin-left: 230px; /* Adjust the value based on the height of your fixed navbar */
+  padding: 10px
+}
+
+@media screen and (max-width: 600px) {
   #navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%; /* Optionally set the height to make it cover the full height of the screen */
-    background-color: #f0f0f0; /* Add your preferred background color */
-    padding: 10px; /* Add padding to make it look better */
+    padding: 5px; /* Add padding to the navbar for better spacing on smaller screens */
+    width: 30%; /* Make the navbar take the full width of the screen */
   }
-  
+
   #navbar header {
-    font-size: 1.5em; /* Adjust the font size as needed */
+    font-size: 1.0em; /* Adjust font size for smaller screens */
   }
-  
-  #navbar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    color: #333; /* Set your preferred text color */
-  }
-  
-  #navbar a:hover {
-    color: red; /* Set the color for when the link is hovered */
-  }
-  
+
   #main-doc {
-    margin-left: 230px; /* Adjust the value based on the height of your fixed navbar */
-    padding: 10px
+    margin-left: 200px;
+    width: 100%; /* Make the main documentation take the full width of the screen */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px; /* Add padding to the main documentation for better spacing on smaller screens */
   }
+}
 
-  #main-doc h1 {
-    padding: -15px
-  }
-  
-  @media screen and (max-width: 600px) {
-    #navbar {
-      position: absolute;
-      top: 65px;
-      left: 0;
-      width: 100%;
-      height: auto;
-    }
-  
-    #navbar-toggle {
-      display: block;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      font-size: 1.5em;
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  
-    #main-doc {
-      margin-left: 50px;
-      width: 170%; /* Make the main documentation take the full width of the screen */
-      box-sizing: border-box; /* Include padding and border in the total width */
-      padding: 10px; /* Add padding to the main documentation for better spacing on smaller screens */
-    }
+code {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 15px;
+  font-family: monospace;
+  border-radius: 5px
+}
 
-    h1{
-      margin: auto;
-    }
-
-  }
-  
-  code {
-    display: block;
-    background-color: #f0f0f0;
-    padding: 15px;
-    font-family: monospace;
-    border-radius: 5px
-  }
-  
-  
